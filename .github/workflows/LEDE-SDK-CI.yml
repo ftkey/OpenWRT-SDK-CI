@@ -125,4 +125,4 @@ jobs:
         uses: softprops/action-gh-release@master
         with:
           tag_name: R${{ env.WRT_DATE }}_ipq60xx
-          files: ./wrt/bin/targets/*.*
+          files: ./wrt/bin/targets/qualcommax/ipq60xx/*.*
