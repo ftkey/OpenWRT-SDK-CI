@@ -60,7 +60,7 @@ jobs:
         run: |
           cd ./wrt/ 
           sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
-          # ./scripts/feeds update -a          
+          ./scripts/feeds update -a          
           # DELETE_PACKAGE() {
           #   local PKG_NAME=$1 && rm -rf $(find ./ ../feeds/luci/ ../feeds/packages/ -maxdepth 3 -type d -iname "$PKG_NAME" -prune)
           # }
