@@ -11,6 +11,7 @@ on:
   workflow_call:
   # schedule:
   #   - cron: 0 20 * * *
+  workflow_dispatch:
 
 permissions: write-all
 
