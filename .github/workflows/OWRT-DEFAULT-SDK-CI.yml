@@ -71,7 +71,7 @@ jobs:
         run: |
           cd ./wrt/
           rm -rf ./tmp* ./.config*
-          cat $GITHUB_WORKSPACE/SDK/.config  > .config
+          cat $GITHUB_WORKSPACE/SDK/ipq60xx.config  > .config
           make defconfig
 
       - name: Download packages
