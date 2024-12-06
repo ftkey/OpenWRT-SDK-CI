@@ -5,7 +5,7 @@
 #
 # Copyright (C) 2020 KFERMercer
 #
-name: LEDE-SDK-CI
+name: OWRT-SDK-CI
 
 on:
   workflow_call:
@@ -17,8 +17,8 @@ permissions: write-all
 
 env:
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-  WRT_BRANCH: master
-  WRT_SOURCE: coolsnowwolf/lede
+  WRT_BRANCH: main
+  WRT_SOURCE: VIKINGYFY/immortalwrt
   
 jobs:
 
@@ -124,5 +124,5 @@ jobs:
       - name: Release Firmware
         uses: softprops/action-gh-release@master
         with:
-          tag_name: R${{ env.WRT_DATE }}_ipq60xx_lede
+          tag_name: R${{ env.WRT_DATE }}_ipq60xx_owrt
           files: ./wrt/bin/targets/qualcommax/ipq60xx/*.*
