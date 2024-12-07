@@ -71,7 +71,7 @@ jobs:
         run: |
           cd ./wrt/
           rm -rf ./tmp* ./.config*
-          cat $GITHUB_WORKSPACE/SDK/lede.config  > .config
+          cat $GITHUB_WORKSPACE/SDK/ledefull.config  > .config
           make defconfig
 
       - name: Download packages
